@@ -1,0 +1,43 @@
+**counter.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <img src="flower1.jpg" alt="img1" height="300px"  weight="300px"  id="flower1" onclick="myFunction(this);"/>  
+   Counter: <span id="span1"></span>  
+  <img src="flower2.jpg" alt="img2" height="300px"  weight="300px" id="flower2"onclick="myFunction(this)"/>
+   Counter: <span id="span2"></span>  
+   <img src="flower3.jpg" alt="img3" height="300px"  weight="400px" id="flower3"onclick="myFunction(this)"/>   
+   Counter: <span id="span3"></span> 
+  <script src="main.js"></script>
+
+
+</body>
+</html>
+
+==========================================================================================================================================================================
+**main.js
+
+var counter=0;
+var cnt1=0;
+var cnt2=0;
+function myFunction(elem){
+    if(elem.id=='flower1'){
+        counter+=1;
+        document.getElementById('span1').innerHTML=counter;
+    }
+    else if(elem.id =='flower2'){
+        cnt1+=1;
+        document.getElementById('span2').innerHTML=cnt1;
+    }
+    else if(elem.id=='flower3'){
+        cnt2+=1;
+        document.getElementById('span3').innerHTML=cnt2;
+    }
+}
